@@ -45,7 +45,18 @@
       </div>
     </div>
   </div>
-
+ <!-- Scripts -->
+  <script src="/public/js/edadCategoria.js"></script>
+  <script src="/public/js/tablaMultiplicar.js"></script>
+  <script src="/public/js/tablasSeleccionadas.js"></script>
+  <script>
+    function mostrarActividad(id) {
+      document.querySelectorAll('.actividad').forEach(div => {
+        div.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
