@@ -14,7 +14,37 @@
       <button onclick="mostrarActividad('actividad2')">Actividad 2: Tabla</button>
       <button onclick="mostrarActividad('actividad3')">Actividad 3: Pares/Impares</button>
     </nav>
+<!-- Contenido de actividades -->
+    <div class="contenido">
+      <!-- Actividad 1 -->
+      <div id="actividad1" class="actividad active">
+        <h2>Actividad 1: Clasificación por Edad</h2>
+        <p>Haz clic en el botón para introducir tu edad.</p>
+        <button onclick="clasificarEdad()">Ejecutar Actividad 1</button>
+        <p>Ver resultado en la consola (F12).</p>
+      </div>
 
+<!-- Actividad 2 -->
+      <div id="actividad2" class="actividad">
+        <h2>Actividad 2: Tabla de Multiplicar</h2>
+        <input type="number" id="numeroTabla" placeholder="Número">
+        <button onclick="mostrarTabla()">Mostrar Tabla</button>
+        <pre id="resultadoTabla"></pre>
+      </div>
+
+      <!-- Actividad 3 -->
+      <div id="actividad3" class="actividad">
+        <h2>Actividad 3: Tablas Pares o Impares</h2>
+        <select id="tipoTabla">
+          <option value="">Selecciona</option>
+          <option value="pares">Pares</option>
+          <option value="impares">Impares</option>
+        </select>
+        <button onclick="mostrarTablas()">Mostrar Tablas</button>
+        <pre id="resultadoTablas"></pre>
+      </div>
+    </div>
+  </div>
 
 
 </body>
